@@ -25,4 +25,3 @@ Aprendizados:
 
 - [javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [webpack](https://webpack.js.org/)
-- [sass](https://sass-lang.com/)
