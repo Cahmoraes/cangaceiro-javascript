@@ -53,6 +53,9 @@ class NegociacaoService {
       this.obterNegociacoesDaSemanaRetrasada(),
     ])
       .then((periodo) => periodo.reduce((acc, array) => acc.concat(array), []))
+      .then((negociacoes) =>
+        negociacoes.sort((a, b) => b.data.getTime() - a.data.getTime()),
+      )
       .catch(
         (err) =>
           (this._mensagem.texto =

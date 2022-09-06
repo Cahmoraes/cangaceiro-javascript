@@ -49,6 +49,16 @@ class NegociacaoController {
   importaNegociacoes() {
     this._service
       .obtemNegociacoesDoPeriodo()
+      .then((novasNegociacoes) =>
+        novasNegociacoes.filter(
+          (novaNegociacao) =>
+            !this._negociacoes
+              .paraArray()
+              .some((negociacaoExistente) =>
+                negociacaoExistente.equals(novaNegociacao),
+              ),
+        ),
+      )
       .then((negociacoes) =>
         negociacoes.forEach((negociacao) =>
           this._negociacoes.adiciona(negociacao),
