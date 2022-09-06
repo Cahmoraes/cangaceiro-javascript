@@ -27,7 +27,8 @@ Aprendizados:
   <li>Parão Proxy: interceptar chamadas a métodos e propriedades de um objeto</li>
   <li>Padrão Promise: refatoração de funções de callback para promises</li>
   <li>Error-First Callback: Técnica utilizada em funções de callback para tratar resultados de operações assíncronas</li>
-  <li>Padrão Decorator (com Javascript Vanilla): adicionar funcionalidades extras a Classes, métodos e atributos.</li>
+  <li>Padrão Decorator (com Javascript Vanilla): adicionar funcionalidades extras a Classes, métodos e atributos</li>
+  <li>IndexedDB: banco de dados transacional para persistência de dados no navegador</li>
 </ul>
 </p>
 
