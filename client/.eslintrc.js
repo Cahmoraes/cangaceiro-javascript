@@ -24,5 +24,6 @@ module.exports = {
     ],
     'no-unused-vars': 'off',
     'no-undef': 'off',
+    'n/handle-callback-err': 'off',
   },
 }
