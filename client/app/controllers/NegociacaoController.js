@@ -1,28 +1,21 @@
-System.register(['../domain/negociacao/Negociacoes.js', '../domain/negociacao/Negociacao.js', '../ui/views/NegociacoesView.js', '../ui/views/MensagemView.js', '../ui/models/Mensagem.js', '../domain/negociacao/NegociacaoService.js', '../util/DaoFactory.js', '../ui/converters/DataInvalidaException.js', '../util/Bind.js', '../ui/converters/DateConverter.js'], function (_export, _context) {
+System.register(['../domain/index.js', '../ui/index.js', '../util/index.js'], function (_export, _context) {
   "use strict";
 
-  var Negociacoes, Negociacao, NegociacoesView, MensagemView, Mensagem, NegociacaoService, getNegociacaoDao, DataInvalidaException, Bind, DateConverter;
+  var Negociacoes, NegociacaoService, Negociacao, NegociacoesView, MensagemView, Mensagem, DataInvalidaException, DateConverter, getNegociacaoDao, Bind;
   return {
-    setters: [function (_domainNegociacaoNegociacoesJs) {
-      Negociacoes = _domainNegociacaoNegociacoesJs.Negociacoes;
-    }, function (_domainNegociacaoNegociacaoJs) {
-      Negociacao = _domainNegociacaoNegociacaoJs.Negociacao;
-    }, function (_uiViewsNegociacoesViewJs) {
-      NegociacoesView = _uiViewsNegociacoesViewJs.NegociacoesView;
-    }, function (_uiViewsMensagemViewJs) {
-      MensagemView = _uiViewsMensagemViewJs.MensagemView;
-    }, function (_uiModelsMensagemJs) {
-      Mensagem = _uiModelsMensagemJs.Mensagem;
-    }, function (_domainNegociacaoNegociacaoServiceJs) {
-      NegociacaoService = _domainNegociacaoNegociacaoServiceJs.NegociacaoService;
-    }, function (_utilDaoFactoryJs) {
-      getNegociacaoDao = _utilDaoFactoryJs.getNegociacaoDao;
-    }, function (_uiConvertersDataInvalidaExceptionJs) {
-      DataInvalidaException = _uiConvertersDataInvalidaExceptionJs.DataInvalidaException;
-    }, function (_utilBindJs) {
-      Bind = _utilBindJs.Bind;
-    }, function (_uiConvertersDateConverterJs) {
-      DateConverter = _uiConvertersDateConverterJs.DateConverter;
+    setters: [function (_domainIndexJs) {
+      Negociacoes = _domainIndexJs.Negociacoes;
+      NegociacaoService = _domainIndexJs.NegociacaoService;
+      Negociacao = _domainIndexJs.Negociacao;
+    }, function (_uiIndexJs) {
+      NegociacoesView = _uiIndexJs.NegociacoesView;
+      MensagemView = _uiIndexJs.MensagemView;
+      Mensagem = _uiIndexJs.Mensagem;
+      DataInvalidaException = _uiIndexJs.DataInvalidaException;
+      DateConverter = _uiIndexJs.DateConverter;
+    }, function (_utilIndexJs) {
+      getNegociacaoDao = _utilIndexJs.getNegociacaoDao;
+      Bind = _utilIndexJs.Bind;
     }],
     execute: function () {
       class NegociacaoController {
