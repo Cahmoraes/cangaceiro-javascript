@@ -12,6 +12,7 @@ import {
   debounce,
   controller,
   obrigatorio,
+  bindEvent,
 } from '../util/index.js'
 
 @controller('#data', '#quantidade', '#valor')
@@ -45,6 +46,7 @@ export class NegociacaoController {
     this._init()
   }
 
+  @bindEvent('submit', '.form')
   @debounce()
   async adiciona(event) {
     try {
@@ -63,6 +65,7 @@ export class NegociacaoController {
     }
   }
 
+  @bindEvent('click', '#botao-apaga')
   async apaga() {
     try {
       const dao = await getNegociacaoDao()
@@ -75,6 +78,7 @@ export class NegociacaoController {
     }
   }
 
+  @bindEvent('click', '#botao-importa')
   @debounce(1500)
   async importaNegociacoes() {
     try {
