@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo Gerador - Iterador</title>
+</head>
+<body>
+  <script>
+    // declara função geradora com *
+    function *minhaFuncaoGeradora() {
+      for(let i = 0; i < 3; i++){
+        // Instrução YIELD suspende a execução do bloco da função
+        // e retorna o valor de i
+        yield i
+      }
+    }
+    // Obtém um iterator
+    const it = minhaFuncaoGeradora()
+
+    // Executa o bloco do generator, que será suspenso
+    // assim que encontrar a instrução yield
+    let objeto = null
+
+    while(!(objeto = it.next()).done) {
+      console.log(objeto.value)
+    }
+  </script>
+</body>
+</html>l

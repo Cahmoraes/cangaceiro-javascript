@@ -1,5 +1,6 @@
 import { HttpService } from '../../util/HttpService.js'
 import { Negociacao } from './Negociacao.js'
+import { ApplicationException } from '../../util/ApplicationException.js'
 export class NegociacaoService {
   constructor() {
     this._http = new HttpService()
@@ -13,7 +14,9 @@ export class NegociacaoService {
             new Negociacao(new Date(dado.data), dado.quantidade, dado.valor),
         ),
       (err) => {
-        throw new Error('Não foi possível obter as negociações da semana')
+        throw new ApplicationException(
+          'Não foi possível obter as negociações da semana',
+        )
       },
     )
   }
@@ -26,7 +29,7 @@ export class NegociacaoService {
             new Negociacao(new Date(dado.data), dado.quantidade, dado.valor),
         ),
       (err) => {
-        throw new Error(
+        throw new ApplicationException(
           'Não foi possível obter as negociações da semana anterior',
         )
       },
@@ -41,27 +44,26 @@ export class NegociacaoService {
             new Negociacao(new Date(dado.data), dado.quantidade, dado.valor),
         ),
       (err) => {
-        throw new Error(
+        throw new ApplicationException(
           'Não foi possível obter as negociações da semana retrasada',
         )
       },
     )
   }
 
-  obtemNegociacoesDoPeriodo() {
-    return Promise.all([
-      this.obterNegociacoesDaSemana(),
-      this.obterNegociacoesDaSemanaAnterior(),
-      this.obterNegociacoesDaSemanaRetrasada(),
-    ])
-      .then((periodo) => periodo.reduce((acc, array) => acc.concat(array), []))
-      .then((negociacoes) =>
-        negociacoes.sort((a, b) => b.data.getTime() - a.data.getTime()),
-      )
-      .catch(
-        (err) =>
-          (this._mensagem.texto =
-            'Não foi possível obter as negociações do período'),
-      )
+  async obtemNegociacoesDoPeriodo() {
+    try {
+      const periodo = await Promise.all([
+        this.obterNegociacoesDaSemana(),
+        this.obterNegociacoesDaSemanaAnterior(),
+        this.obterNegociacoesDaSemanaRetrasada(),
+      ])
+
+      return periodo
+        .reduce((acc, array) => acc.concat(array), [])
+        .sort((a, b) => b.data.getTime() - a.data.getTime())
+    } catch (err) {
+      this._mensagem.texto = 'Não foi possível obter as negociações do período'
+    }
   }
 }
