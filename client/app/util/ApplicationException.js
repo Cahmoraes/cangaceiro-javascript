@@ -4,12 +4,12 @@ System.register([], function (_export, _context) {
   return {
     setters: [],
     execute: function () {
-      class ApplicationException extends Error {
+      let ApplicationException = class ApplicationException extends Error {
         constructor(message = '') {
           super(message);
           this.name = this.constructor.name;
         }
-      }
+      };
 
       _export('ApplicationException', ApplicationException);
 

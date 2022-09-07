@@ -7,7 +7,7 @@ System.register(['./View.js'], function (_export, _context) {
       View = _ViewJs.View;
     }],
     execute: function () {
-      class MensagemView extends View {
+      let MensagemView = class MensagemView extends View {
         template(model) {
           return model.texto ? /* html */`
     <p class="alert alert-info">${model.texto}</p>
@@ -19,7 +19,7 @@ System.register(['./View.js'], function (_export, _context) {
         update(model) {
           this._elemento.innerHTML = this.template(model);
         }
-      }
+      };
 
       _export('MensagemView', MensagemView);
     }

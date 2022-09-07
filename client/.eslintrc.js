@@ -4,6 +4,8 @@ module.exports = {
     es2021: true,
     node: true,
   },
+  parser: '@babel/eslint-parser',
+  requireConfigFile: false,
   extends: ['eslint:recommended', 'standard', 'plugin:prettier/recommended'],
   parserOptions: {
     ecmaVersion: 'latest',

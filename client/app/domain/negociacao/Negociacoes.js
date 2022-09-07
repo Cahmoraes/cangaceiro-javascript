@@ -4,7 +4,7 @@ System.register([], function (_export, _context) {
   return {
     setters: [],
     execute: function () {
-      class Negociacoes {
+      let Negociacoes = class Negociacoes {
         constructor() {
           this._negociacoes = [];
 
@@ -26,7 +26,7 @@ System.register([], function (_export, _context) {
         esvazia() {
           this._negociacoes.length = 0;
         }
-      }
+      };
 
       _export("Negociacoes", Negociacoes);
     }
