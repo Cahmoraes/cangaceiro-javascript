@@ -5,6 +5,7 @@
 ---
 
 ## :rocket: Sobre
+
 <p align="center">
   <a href="https://www.casadocodigo.com.br/products/colecao-cangaceiro-javascript?_pos=1&_sid=eded78d67&_ss=r&variant=12268851298379">
     <img src="https://github.com/Cahmoraes/cangaceiro-javascript/blob/main/client/app/assets/capa.jpg" alt="Cangaceiro Javascript">
@@ -18,6 +19,7 @@
 </p>
 
 ## Descrição
+
 <p>Este projeto foi desenvolvido ao longo da leitura do livro <a href="https://www.casadocodigo.com.br/products/colecao-cangaceiro-javascript?_pos=1&_sid=eded78d67&_ss=r&variant=12268851298379">Cangaceiro Javascript</a>, do professor Flávio Almeida</p>
 <p>
 Aprendizados:
@@ -29,9 +31,10 @@ Aprendizados:
   <li>Error-First Callback: Técnica utilizada em funções de callback para tratar resultados de operações assíncronas</li>
   <li>Padrão Decorator (com Javascript Vanilla): adicionar funcionalidades extras a Classes, métodos e atributos</li>
   <li>IndexedDB: banco de dados transacional para persistência de dados no navegador</li>
+  <li>Module Pattern: criação de escopos fechados para ocultar informações do escopo global</li>
+  <li>Monkey Patching (dynamic runtime patching): técnica para modificar ou estender o comportamento de uma aplicação em seu tempo de execução</li>
 </ul>
 </p>
-
 
 ## :computer: Tecnologias utilizadas
 
