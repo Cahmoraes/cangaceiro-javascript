@@ -33,6 +33,7 @@ Aprendizados:
   <li>IndexedDB: banco de dados transacional para persistência de dados no navegador</li>
   <li>Module Pattern: criação de escopos fechados para ocultar informações do escopo global</li>
   <li>Monkey Patching (dynamic runtime patching): técnica para modificar ou estender o comportamento de uma aplicação em seu tempo de execução</li>
+  <li>Padrão DAO (Data Access Object): tem como objetivo esconder os detalhes de acesso aos dados, fornecendo métodos de alto nível para o desenvolvedor</li>
 </ul>
 </p>
 
