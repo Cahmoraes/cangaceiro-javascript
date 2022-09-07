@@ -1,20 +1,10 @@
 export class HttpService {
   get(url) {
-    return new Promise((resolve, reject) => {
-      const xhr = new XMLHttpRequest()
-      xhr.open('GET', url)
+    return fetch(url).then(this._handleErrors)
+  }
 
-      xhr.onreadystatechange = () => {
-        if (xhr.readyState === 4) {
-          if (xhr.status === 200) {
-            resolve(JSON.parse(xhr.responseText))
-          } else {
-            reject(xhr.responseText)
-          }
-        }
-      }
-
-      xhr.send()
-    })
+  _handleErrors(response) {
+    if (!response.ok) throw new Error(response.statusText)
+    return response.json()
   }
 }

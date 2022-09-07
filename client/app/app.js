@@ -1,10 +1,12 @@
-System.register(['./controllers/NegociacaoController.js'], function (_export, _context) {
+System.register(['./controllers/NegociacaoController.js', './domain/index.js'], function (_export, _context) {
   "use strict";
 
-  var NegociacaoController;
+  var NegociacaoController, Negociacao;
   return {
     setters: [function (_controllersNegociacaoControllerJs) {
       NegociacaoController = _controllersNegociacaoControllerJs.NegociacaoController;
+    }, function (_domainIndexJs) {
+      Negociacao = _domainIndexJs.Negociacao;
     }],
     execute: function () {
 

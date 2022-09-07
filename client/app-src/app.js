@@ -1,4 +1,5 @@
 import { NegociacaoController } from './controllers/NegociacaoController.js'
+import { Negociacao } from './domain/index.js'
 
 const controller = new NegociacaoController()
 
