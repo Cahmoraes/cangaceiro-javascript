@@ -65,9 +65,7 @@
     <br />
 
     <div id="negociacoes"></div>
-
-
-    <script src="./app/ui/converters/DateConverter.js"></script>
+    <!-- <script src="./app/ui/converters/DateConverter.js"></script>
     <script src="./app/ui/views/View.js"></script>
     <script src="./app/domain/negociacao/Negociacao.js"></script>
     <script src="./app/ui/views/NegociacoesView.js"></script>
@@ -84,6 +82,11 @@
     <script src="./app/util/ConnectionFactory.js"></script>
     <script src="./app/domain/negociacao/NegociacaoDao.js"></script>
     <script src="./app/util/DaoFactory.js"></script>
-    <script src="./app/app.js"></script>
+    <script src="./app/app.js"></script> -->
+    <script src="./node_modules/systemjs/dist/system.js"></script>
+    <script>
+      System.import('./app/app.js')
+      .catch((err) => console.log(err))
+    </script>
   </body>
 </html>

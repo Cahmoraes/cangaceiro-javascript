@@ -27,4 +27,5 @@ module.exports = {
     'n/handle-callback-err': 'off',
     'prefer-promise-reject-errors': 'off',
   },
+  ignorePatterns: ['app/'],
 }
