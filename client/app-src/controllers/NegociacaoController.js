@@ -1,10 +1,5 @@
-import { Negociacoes, NegociacaoService, Negociacao } from '../domain/index.js'
-import {
-  NegociacoesView,
-  MensagemView,
-  Mensagem,
-  DateConverter,
-} from '../ui/index.js'
+import { Negociacoes, Negociacao } from '../domain/'
+import { NegociacoesView, MensagemView, Mensagem, DateConverter } from '../ui/'
 import {
   getNegociacaoDao,
   Bind,
@@ -13,7 +8,7 @@ import {
   controller,
   obrigatorio,
   bindEvent,
-} from '../util/index.js'
+} from '../util/'
 
 @controller('#data', '#quantidade', '#valor')
 export class NegociacaoController {
@@ -41,7 +36,7 @@ export class NegociacaoController {
       'texto',
     )
 
-    this._service = new NegociacaoService()
+    // this._service = new NegociacaoService()
 
     this._init()
   }
@@ -82,7 +77,11 @@ export class NegociacaoController {
   @debounce(1500)
   async importaNegociacoes() {
     try {
-      const negociacoes = await this._service.obtemNegociacoesDoPeriodo()
+      const { NegociacaoService } = await import(
+        '../domain/negociacao/NegociacaoService'
+      )
+      const service = new NegociacaoService()
+      const negociacoes = await service.obtemNegociacoesDoPeriodo()
 
       negociacoes
         .filter(
