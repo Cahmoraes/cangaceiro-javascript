@@ -8,14 +8,15 @@
 
 <p align="center">
   <a href="https://www.casadocodigo.com.br/products/colecao-cangaceiro-javascript?_pos=1&_sid=eded78d67&_ss=r&variant=12268851298379">
-    <img src="https://images-na.ssl-images-amazon.com/images/I/41GWl%2B1rsOL._SX342_SY445_QL70_ML2_.jpg" alt="Cangaceiro Javascript">
+    <img src="https://github.com/Cahmoraes/cangaceiro-javascript/blob/main/client/assets/capa.jpg" alt="Cangaceiro Javascript">
   </a>
 </p>
 
 <br>
 
+
 <p align="center">
-  <img src="https://github.com/Cahmoraes/cangaceiro-javascript/blob/main/client/app/assets/negociacoes-cangaceiro.gif" alt="Negociações">
+  <img src="https://github.com/Cahmoraes/cangaceiro-javascript/blob/main/client/assets/cangaceiro-negociacoes.gif" alt="Negociações">
 </p>
 
 ## Descrição
