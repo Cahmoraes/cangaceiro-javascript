@@ -5,7 +5,7 @@ const optimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-let plugins = []
+const plugins = []
 
 plugins.push(
   new HtmlWebpackPlugin({
