@@ -34,6 +34,8 @@ Aprendizados:
   <li>Module Pattern: criação de escopos fechados para ocultar informações do escopo global</li>
   <li>Monkey Patching (dynamic runtime patching): técnica para modificar ou estender o comportamento de uma aplicação em seu tempo de execução</li>
   <li>Padrão DAO (Data Access Object): tem como objetivo esconder os detalhes de acesso aos dados, fornecendo métodos de alto nível para o desenvolvedor</li>
+  <li>Code Splitting: técnica para dividir o bundle final em vários pedaços, visando ganho de performance e rápido carregamento da aplicação</li>
+  <li>Lazy Loading: carregamento preguiçoso de módulos. Módulo NegociacaoService será carregado somente quando necessário</li>
 </ul>
 </p>
 
