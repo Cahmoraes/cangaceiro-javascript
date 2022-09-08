@@ -1,5 +1,5 @@
 <h3 align="center">
-  <a href="https://www.casadocodigo.com.br/products/colecao-cangaceiro-javascript?_pos=1&_sid=eded78d67&_ss=r&variant=12268851298379" target="_blank">Cangaceiro Javascript</a>
+  <a href="https://cahmoraes.github.io/cangaceiro-javascript/" target="_blank">Cangaceiro Javascript</a>
 </h3>
 
 ---
@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://www.casadocodigo.com.br/products/colecao-cangaceiro-javascript?_pos=1&_sid=eded78d67&_ss=r&variant=12268851298379">
-    <img src="https://github.com/Cahmoraes/cangaceiro-javascript/blob/main/client/app/assets/capa.jpg" alt="Cangaceiro Javascript">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/41GWl%2B1rsOL._SX342_SY445_QL70_ML2_.jpg" alt="Cangaceiro Javascript">
   </a>
 </p>
 
