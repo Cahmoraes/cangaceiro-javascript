@@ -43,4 +43,5 @@ Aprendizados:
 ## :computer: Tecnologias utilizadas
 
 - [javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-- [webpack](https://webpack.js.org/)
+- [typescript](https://www.typescriptlang.org/)
+- [vitejs](https://vitejs.dev/)
