@@ -26,7 +26,7 @@
 Aprendizados:
 <ul>
   <li>Padrão arquitetural MVC: cada aspecto do padrão MVC</li>
-  <li>Padrão Factory: contrução de uma fábrica de Proxies</li>
+  <li>Padrão Factory: construção de uma fábrica de Proxies</li>
   <li>Parão Proxy: interceptar chamadas a métodos e propriedades de um objeto</li>
   <li>Padrão Promise: refatoração de funções de callback para promises</li>
   <li>Error-First Callback: Técnica utilizada em funções de callback para tratar resultados de operações assíncronas</li>
